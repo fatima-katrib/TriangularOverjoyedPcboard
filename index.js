@@ -1,29 +1,38 @@
 
-function societyName(arr){
+//.....first exercise.....//
+
+/*function societyName(arr){
   arr.sort()
   for(let i=0;i<arr.length;i++){
 
-    name += arr[i].substr(0,1)
-    
-    // name.sort()
+    name += arr[i].charAt(0);
   }
   return name
 }
 
 let name=""
-let arr=["sally","layla","fatima"]
-name="wisam"
+let arr=["sally"," ","fatima"]
+name=""
 societyName(arr)
+console.log(name)*/
+
+function societyName(arr){
+sname=[]
+  for(let i=0;i<arr.length;i++){
+    sname.push(arr[i].toUpperCase().charAt(0)) ;
+  }
+
+  return sname.sort().join("");
+   
+}
+let arr=["sally","Lama","fatima"]
+name=societyName(arr)
 console.log(name)
-
-
 
 
 // after the class, try to implement different versions and we will give you feedback
 
-
-
-
+//.....second exercise.....//
 
 /*swapcase = function swapcase(str) {
         return str.replace(/([a-z]+)|([A-Z]+)/g, 
@@ -53,7 +62,7 @@ convert("AAAa")
 console.log (str1)
  
 
-
+//.....third exercise.....//
 function online(array){
   
   if (array.length==0) {
